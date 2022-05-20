@@ -1,3 +1,6 @@
+#comprar {
+  background-color: #fff;
+}
 .comprar-contaner-geral {
   display: flex;
   flex-direction: column;

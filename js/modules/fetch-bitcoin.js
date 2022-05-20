@@ -5,7 +5,7 @@ fetch("https://blockchain.info/ticker")
   .then((bitcoin) => {
     const selecto = document.querySelector("#slc");
     const btcPreco = document.querySelector("[data-btc]");
-    // btcPreco.innerHTML = bitcoin.USD.sell;
+    btcPreco.innerHTML = bitcoin.USD.sell;
     function changeSelecao(index) {
       const indexSelecao = index.target.selectedIndex;
 
@@ -16,13 +16,10 @@ fetch("https://blockchain.info/ticker")
 
         if (value === "1") {
           btcPreco.innerHTML = bitcoin.USD.sell;
-          console.log("1");
         } else if (value === "2") {
           btcPreco.innerHTML = bitcoin.BRL.sell;
-          console.log("2");
         } else if (value === "3") {
           btcPreco.innerHTML = bitcoin.EUR.sell;
-          console.log("3");
         }
       }
       selecionado();

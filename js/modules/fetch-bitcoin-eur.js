@@ -5,5 +5,5 @@ fetch("https://blockchain.info/ticker")
   .then((bitcoin) => {
     const selecto = document.querySelector("#slc");
     const btcCotacaoEUR = document.querySelector("[data-btc='EUR']");
-    // btcCotacaoEUR.innerHTML = bitcoin.EUR.sell;
+    btcCotacaoEUR.innerHTML = bitcoin.EUR.sell;
   });
