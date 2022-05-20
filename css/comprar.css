@@ -1,0 +1,270 @@
+.comprar-contaner-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-comprar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.logo-comprar {
+  height: 60px;
+}
+
+h1 {
+  gap: 16px;
+  font-size: 4rem;
+  color: #474343;
+  font-family: "Montserrat", sans-serif;
+}
+
+.conteudo-comprar {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  justify-content: center;
+  width: 100%;
+  height: 422px;
+}
+
+.btc-bg-comprar {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(92.26deg, #ffe664 -31.74%, #fa8341 122.11%);
+  box-shadow: 10px 15px 25px rgba(250, 131, 65, 0.25),
+    -10px -5px 25px rgba(255, 230, 100, 0.25);
+  border-radius: 29px;
+  padding: 8px;
+  max-width: 514px;
+  max-height: 422px;
+  flex: 1;
+}
+
+.btc-container-comprar {
+  background: #f4f4f4;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btc-container-comprar h2 {
+  font-size: 5rem;
+}
+
+.seta-comprar {
+  align-self: center;
+}
+
+.seta-comprar svg {
+  height: 26px;
+  width: 52px;
+  transform: rotate(-90deg);
+}
+
+.seta-comprar svg path {
+  stroke-width: 2px;
+}
+
+.form-bg {
+  background: linear-gradient(92.26deg, #ffe664 -31.74%, #fa8341 122.11%);
+  box-shadow: 10px 15px 25px rgba(250, 131, 65, 0.25),
+    -10px -5px 25px rgba(255, 230, 100, 0.25);
+  border-radius: 10px;
+  padding: 2px;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+}
+
+.form-valor {
+  border-radius: 9px;
+  background: #ffffff;
+  padding: 4px 10px;
+  max-width: 412px;
+  display: flex;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  line-height: 16px;
+  font-size: 1.5rem;
+  color: #474343;
+}
+
+input[type="text"]::placeholder {
+  color: #d5d5d5;
+}
+
+.form-valor select {
+  color: #ffc164;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  padding-right: 38px;
+  appearance: none;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  background-image: url("../img/seta-2.svg");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  border-radius: 8px;
+}
+
+.form-mobile .form-bg {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .conteudo-comprar {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  .btc-bg-comprar {
+    max-width: 380px;
+    max-height: 340px;
+  }
+  .btc-logo-comprar,
+  .btc-logo-comprar img {
+    width: 100px;
+    height: 100px;
+  }
+  .btc-container-comprar h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .logo-comprar,
+  .logo-comprar svg {
+    width: 40px;
+    height: 40px;
+  }
+  .btc-logo-comprar,
+  .btc-logo-comprar img {
+    width: 60px;
+    height: 60px;
+  }
+  .logo-comprar-title h1 {
+    font-size: 2rem;
+  }
+  .btc-container-comprar h2 {
+    font-size: 3rem;
+  }
+  .btc-bg-comprar {
+    max-width: 300px;
+    max-height: 260px;
+  }
+  input[type="text"] {
+    max-width: 150px;
+    font-size: 1rem;
+  }
+  .conteudo-comprar {
+    height: 260px;
+  }
+  .form-valor select {
+    font-size: 0.875rem;
+    background-image: url("../img/seta-mobile-3.svg");
+    padding: 0px 18px;
+    background-position: right 0px center;
+  }
+}
+
+@media (max-width: 800px) {
+  .conteudo-comprar {
+    gap: 8px;
+  }
+  .seta-comprar svg {
+    height: 23px;
+    width: 26px;
+  }
+  .btc-bg-comprar {
+    padding: 4px;
+  }
+  #form.btc-bg-comprar .btc-container-comprar {
+    justify-content: space-around;
+  }
+  #desktop.form-bg {
+    display: none;
+  }
+  .form-mobile .form-bg {
+    display: flex;
+    margin-top: 60px;
+    position: relative;
+  }
+  .btc-bg-comprar {
+    max-width: 260px;
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btc-bg-comprar {
+    max-width: 200px;
+    max-height: 170px;
+  }
+  .conteudo-comprar {
+    height: 170px;
+    margin-top: 40px;
+  }
+  .btc-container-comprar h2 {
+    font-size: 2rem;
+  }
+  .btc-logo-comprar,
+  .btc-logo-comprar img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btc-bg-comprar {
+    max-width: 170px;
+    max-height: 120px;
+  }
+  .conteudo-comprar {
+    height: 120px;
+    margin-top: 30px;
+  }
+  .btc-logo-comprar,
+  .btc-logo-comprar img {
+    width: 30px;
+    height: 30px;
+  }
+  .btc-container-comprar h2 {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 320px) {
+  .btc-logo-comprar,
+  .btc-logo-comprar img {
+    width: 20px;
+    height: 20px;
+  }
+  .btc-bg-comprar {
+    max-height: 100px;
+  }
+  .btc-container-comprar h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .form-mobile .form-bg {
+    margin-top: 30px;
+  }
+}
