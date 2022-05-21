@@ -34,7 +34,7 @@ h1 {
   margin-top: 60px;
   justify-content: center;
   width: 100%;
-  height: 422px;
+  height: 380px;
 }
 
 .btc-bg-comprar {
@@ -45,8 +45,8 @@ h1 {
     -10px -5px 25px rgba(255, 230, 100, 0.25);
   border-radius: 29px;
   padding: 8px;
-  max-width: 514px;
-  max-height: 422px;
+  max-width: 460px;
+  max-height: 380px;
   flex: 1;
 }
 
@@ -87,8 +87,7 @@ h1 {
   border-radius: 10px;
   padding: 2px;
   display: flex;
-  position: absolute;
-  bottom: 20px;
+  margin-top: 60px;
 }
 
 .form-valor {
@@ -129,7 +128,7 @@ input[type="text"]::placeholder {
 }
 
 .form-mobile .form-bg {
-  display: none;
+  display: flex;
 }
 
 @media (max-width: 1280px) {
@@ -178,7 +177,7 @@ input[type="text"]::placeholder {
     font-size: 1rem;
   }
   .conteudo-comprar {
-    height: 260px;
+    height: 220px;
   }
   .form-valor select {
     font-size: 0.875rem;
@@ -201,9 +200,6 @@ input[type="text"]::placeholder {
   }
   #form.btc-bg-comprar .btc-container-comprar {
     justify-content: space-around;
-  }
-  #desktop.form-bg {
-    display: none;
   }
   .form-mobile .form-bg {
     display: flex;
