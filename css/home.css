@@ -243,6 +243,8 @@ body,
   border-radius: 10px;
   font-size: 2.35rem;
   margin-bottom: 13px;
+  width: 100%;
+  text-align: center;
 }
 
 /* responsivo */
@@ -264,7 +266,7 @@ body,
     padding: 13px;
   }
   .bg-moeda-cotação h3 {
-    font-size: 48px;
+    font-size: 62px;
   }
   .bg-moeda-cotação span {
     margin-bottom: 0px;
@@ -324,7 +326,8 @@ body,
     line-height: 70px;
   }
   .bg-moeda-cotação span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 14px 30px;
   }
   .navegação {
     width: 260px;
@@ -396,6 +399,8 @@ body,
   }
   .bg-moeda-cotação {
     min-width: 195px;
+    min-height: 170px;
+    gap: 10px;
   }
 }
 
@@ -430,6 +435,12 @@ body,
   }
   .conteudo ul {
     gap: 20px;
+  }
+  .bg-moeda-cotação h3 {
+    font-size: 42px;
+  }
+  .bg-moeda-cotação {
+    gap: 4px;
   }
 }
 

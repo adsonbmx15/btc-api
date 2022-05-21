@@ -15,12 +15,12 @@ fetch("https://blockchain.info/ticker")
     console.log(bitcontValor.BRL.symbol);
 
     let bitcont = bitcontValor.USD.sell;
-    valorCompra.innerHTML = `<span data-simbolo>$</span>${bitcont}`;
+    valorCompra.innerHTML = `<span data-simbolo>$</span> ${bitcont}`;
 
     function handleChange(event) {
       const valorMoeda = event.target.value;
       const valorFinal = (valorMoeda / bitcont).toFixed(6);
-      valorCompra.innerHTML = `<span data-simbolo>$</span>${valorFinal}`;
+      valorCompra.innerHTML = `<span data-simbolo>$</span> ${valorFinal}`;
     }
 
     async function handleChangeSelect(event) {
@@ -36,7 +36,7 @@ fetch("https://blockchain.info/ticker")
         }
       }
       valorFinal();
-      valorCompra.innerHTML = `<span data-simbolo>$</span>${bitcont}`;
+      valorCompra.innerHTML = `<span data-simbolo>$</span> ${bitcont}`;
       console.log(bitcont, valorInputSelect);
     }
   });
