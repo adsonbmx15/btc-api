@@ -399,7 +399,6 @@ body,
   }
   .bg-moeda-cotação {
     min-width: 195px;
-    min-height: 170px;
     gap: 10px;
   }
 }
@@ -422,6 +421,7 @@ body,
 
 @media (max-width: 600px) {
   .btc-cotação {
+    margin: 10px auto;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -441,6 +441,12 @@ body,
   }
   .bg-moeda-cotação {
     gap: 4px;
+  }
+  .btc-container-comprar h2 {
+    font-size: 1.75rem;
+  }
+  .btc-container-comprar {
+    gap: 10px;
   }
 }
 
